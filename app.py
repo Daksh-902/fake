@@ -52,12 +52,13 @@ if st.button("Check Authenticity"):
 
                 # Score bar
                 st.markdown("### 📊 Similarity Score")
+                st.code(f"{avg_sim:.2f}")
                 st.progress(min(max(avg_sim, 0), 1))
 
                 # Color-coded judgment
-                if avg_sim > 0.65:
+                if avg_sim > 0.5:
                     st.success("✅ This news is likely REAL or widely reported.")
-                elif avg_sim > 0.45:
+                elif avg_sim > 0.3:
                     st.warning("⚠️ This news is unclear or partially verified.")
                 else:
                     st.error("🚫 This news is likely FAKE or not verified by trusted sources.")
