@@ -1,6 +1,5 @@
-streamlit==1.35.0
-sentence-transformers==2.2.2
-torch==2.7.0
-googlesearch-python==1.1.0
-beautifulsoup4==4.12.2
-requests==2.31.0
+streamlit
+sentence-transformers
+googlesearch-python
+beautifulsoup4
+requests
