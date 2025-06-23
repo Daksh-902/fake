@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 import requests
 
 # Load model
-model = SentenceTransformer("all-MiniLM-L6-v2")
+model = SentenceTransformer("paraphrase-MiniLM-L3-v2")
 
 # Streamlit page settings
 st.set_page_config(page_title="AI Fake News Detector", layout="centered")
